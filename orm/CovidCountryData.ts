@@ -11,22 +11,22 @@ export default class CovidCountryData {
   @Column({ type: "text", length: 5 })
   code!: string;
 
-  @Column()
+  @Column({ nullable: true })
   confirmed: number;
 
-  @Column()
+  @Column({ nullable: true })
   recovered: number;
 
-  @Column()
+  @Column({ nullable: true })
   critical: number;
 
-  @Column()
+  @Column({ nullable: true })
   deaths: number;
 
-  @Column()
+  @Column({ nullable: true })
   latitude: number;
 
-  @Column()
+  @Column({ nullable: true })
   longitude: number;
 
   @Column()
